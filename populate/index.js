@@ -1,3 +1,5 @@
+// index the models in elasticsearch (localhost:9200)
+
 const jsonfile = require('jsonfile');
 var client = require('./connection.js');
 

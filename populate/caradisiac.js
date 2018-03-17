@@ -1,3 +1,5 @@
+// get the models of all the brands, and save the list in 'cars.json'
+
 const jsonfile = require('jsonfile');
 const {getBrands} = require('node-car-api');
 const {getModels} = require('node-car-api');
@@ -28,7 +30,6 @@ async function models (brand, callback) {
     callback();
   }, 500);
 }
-
 
 brands().then(function(brands) {
     brands.reduce((promiseChain, item) => {
