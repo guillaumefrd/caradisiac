@@ -22,6 +22,7 @@ async function models (brand, callback) {
   else {
     models.forEach((mod) => {
       console.log(mod.model + ' || ' + mod.brand);
+      mod.volume = Number(mod.volume); //convert volume into a number
       result.push(mod);
       count++;
     })

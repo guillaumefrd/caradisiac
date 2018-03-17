@@ -1,16 +1,14 @@
 {
-  "name": "populate",
+  "name": "es",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "connection.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "elasticsearch": "^14.2.1",
-    "jsonfile": "^4.0.0",
-    "node-car-api": "git+https://github.com/92bondstreet/node-car-api.git"
+    "elasticsearch": "^14.2.1"
   }
 }
