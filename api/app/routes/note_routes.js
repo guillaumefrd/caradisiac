@@ -7,7 +7,7 @@ module.exports = function(app) {
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
   });
-  
+
   app.get('/populate', (req, res) => {
     populate.pop();
     res.send({'populate': 'done'})
@@ -38,6 +38,7 @@ module.exports = function(app) {
       index: 'caradisiac',
       type: 'model',
       body: {
+        "from" : 0, "size" : 50, 
       	"query": {
       		"range": {
           		"volume": {
